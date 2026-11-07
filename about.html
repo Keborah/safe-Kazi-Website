@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Why SafeKazi exists and where its information comes from.">
+<title>About and sources | SafeKazi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className="js"</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="logo" href="index.html">Safe<b>Kazi</b></a>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Main">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="verify.html">Verify agency</a></li>
+<li><a href="rights.html">Your rights</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="help.html">Get help</a></li>
+<li><a href="about.html" aria-current="page">About</a></li>
+</ul>
+</nav>
+</header>
+<div id="crumbs"><nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">0.0 Home</a></li>
+<li aria-current="page">6.0 About and sources</li>
+</ol>
+</nav></div>
+<main id="main">
+<div class="sheet" data-page="about.html">
+<p class="no">Page 6.0 · About</p>
+<h1>About <span>SafeKazi.</span></h1>
+<p class="lead">Many Ugandans travel to the Gulf for work. SafeKazi helps them check agencies, understand contracts and find help.</p>
+<h2>Our sources</h2>
+<ul>
+<li>AllAfrica, “Uganda: No Budget to Rescue Stranded Ugandans Overseas”, 5 August 2026.</li>
+<li>Daily Monitor, “Systemic gaps leave Ugandan migrant workers stuck in rut”, 3 April 2026.</li>
+<li>Parliament of Uganda, “Ugandan migrant workers living in distress”, 2026.</li>
+<li>New Vision, “Govt rolls out new mechanisms to protect Ugandan migrant workers”, 2026.</li>
+<li>Ministry of Gender, Labour and Social Development, EEMIS portal (eemis.mglsd.go.ug).</li>
+<li>Three.js (threejs.org), Google Fonts, Natural Earth (land data).</li>
+</ul>
+<h2>Contact</h2>
+<p>Add your group email here.</p>
+</div>
+</main>
+<footer>
+<nav aria-label="Footer">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="verify.html">Verify agency</a></li>
+<li><a href="rights.html">Your rights</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="help.html">Get help</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+<div class="passport">
+<p class="note">Your safety passport: <span id="stamp-count"></span></p>
+<ul id="stamps">
+<li data-page="index.html">Home</li>
+<li data-page="verify.html">Verify</li>
+<li data-page="flags.html">Red flags</li>
+<li data-page="rights.html">Rights</li>
+<li data-page="report.html">Report</li>
+<li data-page="help.html">Help</li>
+<li data-page="about.html">About</li>
+</ul>
+</div>
+<p>SafeKazi is an independent student project (Internet Technology and Web Design 1302, Victoria University Kampala). It is not a government licensing authority.</p>
+</footer>
+<button id="ask-btn" class="ask" type="button" aria-expanded="false" aria-controls="ask-panel">Ask SafeKazi</button>
+<section id="ask-panel" class="panel" aria-label="Ask SafeKazi" hidden>
+<div class="panel-top"><h2>Ask SafeKazi</h2><button id="ask-close" class="x" type="button" aria-label="Close">✕</button></div>
+<div id="chat" class="chat" role="log" aria-live="polite"></div>
+<form id="chat-form">
+<label for="chat-input">Your question</label>
+<input class="field" id="chat-input" type="text" autocomplete="off">
+<button class="btn" type="submit">Ask</button>
+<button class="btn ghost" id="chat-mic" type="button">Speak</button>
+<label><input id="chat-speak" type="checkbox"> Read answers aloud</label>
+</form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

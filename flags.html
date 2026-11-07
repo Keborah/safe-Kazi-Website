@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A checklist of warning signs in overseas job offers.">
+<title>Red flags | SafeKazi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className="js"</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="logo" href="index.html">Safe<b>Kazi</b></a>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Main">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="verify.html" aria-current="page">Verify agency</a></li>
+<li><a href="rights.html">Your rights</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="help.html">Get help</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</header>
+<div id="crumbs"><nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">0.0 Home</a></li>
+<li><a href="verify.html">1.0 Verify an agency</a></li>
+<li aria-current="page">1.1 Red flags</li>
+</ol>
+</nav></div>
+<main id="main">
+<div class="sheet" data-page="flags.html">
+<p class="no">Page 1.1 · Protection checklist</p>
+<h1>Recognise the <span>red flags.</span></h1>
+<p class="lead">Tick any warning sign you have seen. This is an awareness checklist, not a legal assessment.</p>
+<form id="flag-form" class="checks">
+<label><input type="checkbox"> They pressure me to pay immediately.</label>
+<label><input type="checkbox"> They refuse to give me a written contract.</label>
+<label><input type="checkbox"> The job, salary or employer keeps changing.</label>
+<label><input type="checkbox"> They discourage me from checking with the Ministry.</label>
+<label><input type="checkbox"> Fees or deductions are unclear.</label>
+<label><input type="checkbox"> They ask for my documents without a clear reason.</label>
+<label><input type="checkbox"> They tell me to travel on a visit visa to work.</label>
+</form>
+<p><button class="btn" id="flag-review" type="button">Review my selections</button><button class="btn ghost" id="flag-clear" type="button">Clear</button></p>
+<p id="flag-out" class="note" aria-live="polite"></p>
+<p>A warning sign does not prove fraud. Pause, keep evidence and verify independently.</p>
+</div>
+</main>
+<footer>
+<nav aria-label="Footer">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="verify.html">Verify agency</a></li>
+<li><a href="rights.html">Your rights</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="help.html">Get help</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+<div class="passport">
+<p class="note">Your safety passport: <span id="stamp-count"></span></p>
+<ul id="stamps">
+<li data-page="index.html">Home</li>
+<li data-page="verify.html">Verify</li>
+<li data-page="flags.html">Red flags</li>
+<li data-page="rights.html">Rights</li>
+<li data-page="report.html">Report</li>
+<li data-page="help.html">Help</li>
+<li data-page="about.html">About</li>
+</ul>
+</div>
+<p>SafeKazi is an independent student project (Internet Technology and Web Design 1302, Victoria University Kampala). It is not a government licensing authority.</p>
+</footer>
+<button id="ask-btn" class="ask" type="button" aria-expanded="false" aria-controls="ask-panel">Ask SafeKazi</button>
+<section id="ask-panel" class="panel" aria-label="Ask SafeKazi" hidden>
+<div class="panel-top"><h2>Ask SafeKazi</h2><button id="ask-close" class="x" type="button" aria-label="Close">✕</button></div>
+<div id="chat" class="chat" role="log" aria-live="polite"></div>
+<form id="chat-form">
+<label for="chat-input">Your question</label>
+<input class="field" id="chat-input" type="text" autocomplete="off">
+<button class="btn" type="submit">Ask</button>
+<button class="btn ghost" id="chat-mic" type="button">Speak</button>
+<label><input id="chat-speak" type="checkbox"> Read answers aloud</label>
+</form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Official contacts and a WhatsApp message with your location for a trusted person.">
+<title>Get help | SafeKazi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&amp;family=Space+Grotesk:wght@600;700&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.className="js"</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<a class="logo" href="index.html">Safe<b>Kazi</b></a>
+<button id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav id="menu" aria-label="Main">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="verify.html">Verify agency</a></li>
+<li><a href="rights.html">Your rights</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="help.html" aria-current="page">Get help</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+</header>
+<div id="crumbs"><nav class="crumbs" aria-label="Breadcrumb">
+<ol>
+<li><a href="index.html">0.0 Home</a></li>
+<li aria-current="page">4.0 Get help</li>
+</ol>
+</nav></div>
+<main id="main">
+<div class="sheet" data-page="help.html">
+<p class="no">Page 4.0 · Help</p>
+<h1>You do not have to face it <span>alone.</span></h1>
+<p class="notice"><b>In immediate danger?</b> Contact local emergency services first. Do not wait for a website.</p>
+<div class="grid">
+<div class="tile"><h3>Ministry of Gender, Labour and Social Development</h3><p>Official external employment guidance.</p><a class="btn ghost" href="https://mglsd.go.ug/external-employment-mis/" target="_blank" rel="noopener">Visit the Ministry</a></div>
+<div class="tile"><h3>Official EEMIS portal</h3><p>Government external employment information system.</p><a class="btn ghost" href="https://eemis.mglsd.go.ug/" target="_blank" rel="noopener">Visit EEMIS</a></div>
+</div>
+<h2>Message a trusted person</h2>
+<p>Prepare a WhatsApp message with your location. You check it and press send yourself. No login is needed.</p>
+<form id="wa-form">
+<label for="wa-number">Trusted contact’s WhatsApp number, with country code</label>
+<input class="field" id="wa-number" type="tel" placeholder="2567...">
+<label for="wa-text">Message</label>
+<textarea class="field" id="wa-text" rows="3">I may need assistance. Please contact me.</textarea>
+<p class="checks"><label><input id="wa-loc" type="checkbox" checked> Include my location</label></p>
+<button class="btn red" type="submit">Prepare WhatsApp message</button>
+</form>
+<p id="wa-out" class="note" aria-live="polite"></p>
+</div>
+</main>
+<footer>
+<nav aria-label="Footer">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="verify.html">Verify agency</a></li>
+<li><a href="rights.html">Your rights</a></li>
+<li><a href="report.html">Report</a></li>
+<li><a href="help.html">Get help</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+</nav>
+<div class="passport">
+<p class="note">Your safety passport: <span id="stamp-count"></span></p>
+<ul id="stamps">
+<li data-page="index.html">Home</li>
+<li data-page="verify.html">Verify</li>
+<li data-page="flags.html">Red flags</li>
+<li data-page="rights.html">Rights</li>
+<li data-page="report.html">Report</li>
+<li data-page="help.html">Help</li>
+<li data-page="about.html">About</li>
+</ul>
+</div>
+<p>SafeKazi is an independent student project (Internet Technology and Web Design 1302, Victoria University Kampala). It is not a government licensing authority.</p>
+</footer>
+<button id="ask-btn" class="ask" type="button" aria-expanded="false" aria-controls="ask-panel">Ask SafeKazi</button>
+<section id="ask-panel" class="panel" aria-label="Ask SafeKazi" hidden>
+<div class="panel-top"><h2>Ask SafeKazi</h2><button id="ask-close" class="x" type="button" aria-label="Close">✕</button></div>
+<div id="chat" class="chat" role="log" aria-live="polite"></div>
+<form id="chat-form">
+<label for="chat-input">Your question</label>
+<input class="field" id="chat-input" type="text" autocomplete="off">
+<button class="btn" type="submit">Ask</button>
+<button class="btn ghost" id="chat-mic" type="button">Speak</button>
+<label><input id="chat-speak" type="checkbox"> Read answers aloud</label>
+</form>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
